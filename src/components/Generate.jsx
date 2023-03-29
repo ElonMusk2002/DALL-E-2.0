@@ -8,8 +8,7 @@ import { v4 } from 'uuid';
 import { collection, addDoc } from 'firebase/firestore';
 import {useAuthState} from "react-firebase-hooks/auth"
 
-const API_TOKEN = "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 ";
-
+const API_TOKEN = "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";
 
 const ImageGenerationForm = () => {
   const [loading, setLoading] = useState(false);

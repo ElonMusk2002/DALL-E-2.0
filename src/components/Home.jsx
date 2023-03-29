@@ -2,9 +2,9 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { getDocs, collection } from 'firebase/firestore';
 import { db } from '../firebase-config';
-// import DisplayPost from './DisplayPost';
+import DisplayPost from './DisplayPost';
 import { CircularIndeterminate } from "../loadanimation";
-// import FormField from "./FormField"
+import FormField from "./FormField"
 
 const Home = () => {
   const [posts, setPost] = useState([])
@@ -46,7 +46,14 @@ const Home = () => {
       </div>
 
       <div className="mt-16">
-
+        <FormField
+          labelName="Search posts"
+          type="text"
+          name="text"
+          placeholder="Search something..."
+          value={searchText}
+          handleChange={handleSearchChange}
+        />
       </div>
 
       <div className="mt-10">
@@ -62,7 +69,18 @@ const Home = () => {
               </h2>
             )}
             <div className="grid lg:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-3">
-             
+              {searchText && searchedResults ? (
+                searchedResults.map(post=>(
+                <DisplayPost
+                  post={post}
+                />
+                ))
+              ) : (posts.map(post=>(
+                <DisplayPost
+                  post={post}
+                />
+                ))
+              )}
             </div>
           </>
         )}

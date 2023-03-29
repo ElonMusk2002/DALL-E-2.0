@@ -15,11 +15,11 @@ const Navbar = () => {
   }
   return (
     <header>
-        <h3>DALL-E 2.0</h3>
+        <img className='rounded-lg' src="https://techcrunch.com/wp-content/uploads/2019/03/lp-logo-3.jpg?w=1024" width={60} alt="Logo" />
 
-        <div className="menu">
-            <Link className='link' to="/">Home</Link>
-            {<Link className='link' to={"/generate"}>Generate</Link>}
+        <div className="menu text-base font-medium text-gray-500 hover:text-gray-900">
+            <Link className='link text-center' to="/">Home</Link>
+            {user && <Link className='link text-center' to={"/generate"}>Generate</Link>}
             {user? <div className='link'><div className='d-flex'><img className='logo' src={user.photoURL} alt="" />  <button onClick={logOut}><LogoutIcon/></button></div></div>
             : <Link className='link' to={"/login"}>Login</Link>
             }
