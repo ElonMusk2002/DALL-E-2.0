@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ai-generation-app/static/css/main.b82709e5.css",
+    "main.js": "/ai-generation-app/static/js/main.1f1c1fc2.js",
+    "index.html": "/ai-generation-app/index.html",
+    "main.b82709e5.css.map": "/ai-generation-app/static/css/main.b82709e5.css.map",
+    "main.1f1c1fc2.js.map": "/ai-generation-app/static/js/main.1f1c1fc2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b82709e5.css",
+    "static/js/main.1f1c1fc2.js"
+  ]
+}
