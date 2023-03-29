@@ -11,7 +11,7 @@ import {getStorage} from "firebase/storage"
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyBK1KnotERzxdCB9qUbrJxSMXjUjHJnQEI",
-  authDomain: "dall-e-2-5de27.firebaseapp.com",
+  authDomain: "dall-e-2-0-nyu1qxtab-elonmusk2002.vercel.app",
   projectId: "dall-e-2-5de27",
   storageBucket: "dall-e-2-5de27.appspot.com",
   messagingSenderId: "660557354857",
