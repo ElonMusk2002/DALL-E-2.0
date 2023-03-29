@@ -29,9 +29,7 @@ const ImageGenerationForm = () => {
           if(prompt !== ""){
             addDoc(postRef, {
               prompt: prompt,
-              image: url,
-              user: user.displayName,
-              logo: user.photoURL,
+              image: url
             })
             .then(res=>alert("posted"))
             .catch(err=>console.log(err))
@@ -95,7 +93,7 @@ const ImageGenerationForm = () => {
         <img src={output} alt="art"  />
         <div className="action">
             <button onClick={handleDownload}><FileDownloadIcon/></button>
-            {user && <button onClick={uploadImage}><ShareIcon/></button>}
+            <button onClick={uploadImage}><ShareIcon/></button>
         </div>
       </div>
     )}

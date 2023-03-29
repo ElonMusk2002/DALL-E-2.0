@@ -13,7 +13,7 @@ const Login = () => {
   }
   return (
     <div className='login-page'>
-        <h2>Login Here!</h2>
+        <h2>Возникли некоторые проблемы с авторизацией, попытаюсь исправить</h2>
         <button className='button' onClick={signIn}>Sign In With Google</button>
     </div>
   )
