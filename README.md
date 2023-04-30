@@ -2,6 +2,8 @@
 
 This project allows users to search for images and download them, share with the community, and generate their own images.
 
+![main-page](Main-page.jpg)
+
 ## Installation
 To install this project, follow these steps:
 
